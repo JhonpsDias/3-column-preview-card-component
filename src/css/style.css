@@ -1,0 +1,111 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: var(--transparent-white);
+    font-family: var(--font-principal);
+}
+
+.main {
+    background-color: var(--very-light-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: "card-sedans card-suvs card-luxury";
+    grid-template-columns: repeat(3, 250px);
+    grid-template-rows: 400px;
+    
+}
+
+.card-sedans {
+    grid-area: card-sedans;
+    padding: 35px;
+    border-radius: 7px 0 0 7px;
+    position: relative;
+}
+
+.card-sedans.laranja {
+    background-color: var(--bright-orange);
+}
+
+.card-suvs {
+    grid-area: card-suvs;
+    padding: 35px;
+    position: relative;
+}
+
+.card-suvs.ciano-escuro {
+    background-color: var(--dark-cyan);
+}
+
+.card-luxury {
+    grid-area: card-luxury;
+    padding: 35px;
+    border-radius: 0 7px 7px 0;
+    position: relative;
+}
+
+.card-luxury.ciano-mais-escuro {
+    background-color: var(--very-dark-cyan);
+}
+
+.container .img {
+    width: 50px;
+    margin-bottom: 15px;
+}
+
+.container .title {
+    font-family: var(--font-title);
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.container .paragrafe {
+    font-size: 1.2rem;
+    line-height: 25px;
+    margin-bottom: 80px;
+}
+
+.btn-more {
+    background-color: #ffffff;
+    font-size: 1.3rem;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.btn-more.btn-laranja {
+    color: var(--bright-orange);
+}
+
+.btn-more.btn-ciano-escuro {
+    color: var(--dark-cyan);
+}
+
+.btn-more.btn-ciano-mais-escuro {
+    color: var(--very-dark-cyan);
+}
+
+.btn-more.btn-laranja:hover {
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    background-color: var(--bright-orange);
+}
+
+
+.btn-more.btn-ciano-escuro:hover {
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    background-color: var(--dark-cyan);
+}
+
+.btn-more.btn-ciano-mais-escuro:hover {
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    background-color: var(--very-dark-cyanrk-cyan);
+}

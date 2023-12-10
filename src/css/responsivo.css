@@ -1,0 +1,26 @@
+@media(max-width: 418px) {
+    .main {
+        height: 100%;
+        padding: 50px;
+    }
+    
+    .container {
+        grid-template-areas: "card-sedans"
+                             "card-suvs"
+                             "card-luxury";
+        grid-template-columns: 300px;
+        grid-template-rows: repeat(3, 350px);
+    }
+
+    .card-sedans {
+        border-radius: 7px 7px 0 0;
+    }
+
+    .card-luxury {
+        border-radius: 0 0 7px 7px;
+    }
+    
+    .container .title {
+        margin-bottom: 12px;
+    }
+}
